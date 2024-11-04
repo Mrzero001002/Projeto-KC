@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
     <style>
         header{
             margin-bottom:8pc;
@@ -17,8 +18,9 @@
             justify-content: space-between;
         }
 
-        #inicio{
+        #inicio h1{
             padding-bottom: 12px;
+            text-align: center;
         }
 
         .container #carousel-ex{
@@ -38,6 +40,43 @@
             display: flex;
             padding-left:12px ;
         }
+
+        #contato{
+            margin-top: 16px;
+            border-top: 1px solid black;
+            display: flex;
+        }
+
+        #form button{
+            margin-top: 8px;
+        }
+
+        img #logo{
+            padding-top: 6px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container{
+                display: block;
+            }
+
+            #Cards{
+                width: 100%;
+            }
+
+            #Produtos{
+                display: block;
+                width: 200%;
+                padding-bottom: 18px;
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            #Produtos #último{
+                display: block;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -67,7 +106,9 @@
             </div>
         </div>
     </header>
-    <h1 class="display-4" id="inicio">Inicio</h1>
+    <div class="container">
+        <h1 class="display-4" id="inicio">Inicio</h1>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-10">
@@ -153,7 +194,7 @@
                         <h3 class="preço">R$15.000</h3>
                         <button type="button" class="btn btn-success">Comprar</button>
                 </div>
-                <div class="col-4">
+                <div class="col-4" id="último">
                     <img class="d-flex w-100" src="https://i.pinimg.com/564x/3e/5e/7b/3e5e7b956bcde4465bb4e5e78b12fafb.jpg">
                         <h3>ps5 versão homem aranha</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -162,6 +203,25 @@
                 </div>
             </div>    
         </div>        
+    </div>
+    <div class="container" id="contato">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="display-3">Contato</h1>
+                <form id="form">
+                    <label class="form-label" for="nome">Seu nome</label>
+                    <input class="form-control" type="text" id="nome">
+                    <label class="form-label" for="email">Seu email</label>
+                    <input type="text" class="form-control" id="email">
+                    <label for="mensagem" class="form-label">Sua mensagem</label>
+                    <textarea class="form-control" id="mensagem"></textarea>
+                    <button class="btn btn-success" type="submit">Enviar!</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <img class="w-100" id="logo" src="https://i.pinimg.com/originals/69/23/d8/6923d87f29729e7f65f1a9f10d1dc9a1.gif">
+            </div>
+        </div>
     </div>
 
     <script src="./bootstrap.bundle.min.js"></script>
