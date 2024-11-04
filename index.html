@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        header{
+            margin-bottom:8pc;
+            text-align: center;
+            background-color: rgb(90, 89, 89, 0.6);
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #inicio{
+            padding-bottom: 12px;
+        }
+
+        .container #carousel-ex{
+            width: 100%;
+            margin-right: 80px;
+        }
+
+        #inicio2{
+            padding-top: 20px;
+        }
+
+        #Cards #xbox{
+            margin-top: 8px;
+        }
+
+        #itens{
+            display: flex;
+            padding-left:12px ;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1 class="display-1">Ebac Consoles</h1>
+                <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Promo">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Con">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h1 class="display-4" id="inicio">Inicio</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <div id="carousel-ex" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="2000" class="carousel-item active">
+                            <img class="d-flex w-100" src="./images/PS5-6-1.jpg">
+                            <div class="carousel-caption">
+                                <h2>Consoles Sony baratos</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="2000" class="carousel-item">
+                            <img class="d-flex w-100" src="./images/xbox-carbon-black-1.jpg">
+                            <div class="carousel-caption">
+                                <h2>Consoles microsoft</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="2000" class="carousel-item">
+                            <img class="d-flex w-100" src="./images/1_YvxAMX2WntRM3HNT2wufAA.jpg">
+                            <div class="carousel-caption">
+                                <h2>Sobre RPGs de mesa</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-ex" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-ex" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-ex" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <div class="container d-block" id="inicio2">
+                    <h2>Sobre a loja Ebac-Consoles</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet qui vitae hic illo, nostrum aliquid. Dolore perspiciatis consequuntur iste non, adipisci, accusamus aspernatur eius vitae iure totam delectus tempora!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" id="Cards">
+            <article class="card">
+                <img id="ps4" src="https://i.pinimg.com/564x/cf/d6/7c/cfd67cf1c0bb1c311b185c144dd211b6.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Novo ps4 Pro</h4>
+                        <h5 class="card-subtitle">Sony anuncia novo console</h5>
+                        <p class="card-text">Sony nessa quarta feira anuncia seu novo console, utilizando a cor preta e azul escuro, com led.</p>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2018 as 16:30</time>
+                    </footer>
+            </article>
+            <div id="xbox" class="card text-bg-dark">
+                <img id="xbox" src="./images/image-removebg-preview (4).png">
+                <div class="card-body">
+                    <h4 class="card-title">Game pass aumenta o preço</h4>
+                    <h5 class="card-subtitle">Aumento de preço</h5>
+                    <p class="card-text">Microsoft aumentou o preço de sua assinatura</p>
+                </div>
+                <footer class="card-footer">
+                    Postado em <time>12/08/2020 as 16:30</time>
+                </footer>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="Produtos">
+                <h1 class="inicio">Produtos</h1>
+                <div class="col-4">
+                    <img class="d-flex w-100" src="https://i.pinimg.com/564x/3e/5e/7b/3e5e7b956bcde4465bb4e5e78b12fafb.jpg">
+                        <h3>ps5 versão homem aranha</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="preço">R$15.000</h3>
+                        <button type="button" class="btn btn-success">Comprar</button>
+                </div>
+                <div class="col-4">
+                    <img class="d-flex w-100" src="https://i.pinimg.com/564x/3e/5e/7b/3e5e7b956bcde4465bb4e5e78b12fafb.jpg">
+                        <h3>ps5 versão homem aranha</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="preço">R$15.000</h3>
+                        <button type="button" class="btn btn-success">Comprar</button>
+                </div>
+                <div class="col-4">
+                    <img class="d-flex w-100" src="https://i.pinimg.com/564x/3e/5e/7b/3e5e7b956bcde4465bb4e5e78b12fafb.jpg">
+                        <h3>ps5 versão homem aranha</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="preço">R$15.000</h3>
+                        <button type="button" class="btn btn-success">Comprar</button>
+                </div>
+            </div>    
+        </div>        
+    </div>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
